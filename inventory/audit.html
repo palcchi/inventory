@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Audit</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Audit</h2>
+
+<input id="kode" list="kodeList" placeholder="Kode Barang">
+<datalist id="kodeList"></datalist>
+<input id="cabang" list="cabangList" placeholder="Cabang">
+<datalist id="cabangList"></datalist>
+  <input id="fisik" type="number" placeholder="Stock Fisik">
+  <input id="pic" placeholder="PIC">
+  <input id="catatan" placeholder="Catatan / Keterangan">
+
+<button onclick="submitAudit()">Submit</button>
+
+  <div id="message"></div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

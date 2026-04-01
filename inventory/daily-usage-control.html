@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Daily Usage Control</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Daily Usage Control</h2>
+
+<input id="kode" list="kodeList" placeholder="Kode Barang">
+<datalist id="kodeList"></datalist>
+<input id="cabang" list="cabangList" placeholder="Cabang">
+<datalist id="cabangList"></datalist>
+  <input id="fisik" type="number" placeholder="Stock Fisik">
+  <input id="kamar" placeholder="Kamar">
+  <input id="pic" placeholder="PIC">
+
+<button onclick="submitDailyUsageControl()">Submit</button>
+
+  <div id="message"></div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

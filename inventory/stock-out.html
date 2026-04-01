@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Stock Out</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Stock Out</h2>
+
+<input id="kode" list="kodeList" placeholder="Kode Barang">
+<datalist id="kodeList"></datalist>
+<input id="qty" type="number" placeholder="Qty">
+<input id="cabang" list="cabangList" placeholder="Cabang">
+<datalist id="cabangList"></datalist>
+<input id="cabang" list="cabangList" placeholder="Cabang">
+<datalist id="cabangList"></datalist>
+  <input id="pic" placeholder="PIC">
+
+<button onclick="submitStockOut()">Submit</button>
+
+  <div id="message"></div>
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

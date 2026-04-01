@@ -1,0 +1,120 @@
+body {
+font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+background: #f5f5f5;
+margin: 0;
+padding: 16px;
+}
+
+/* CONTAINER */
+.container {
+max-width: 420px;
+margin: auto;
+background: white;
+padding: 20px;
+border-radius: 16px;
+box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* TITLE */
+h2 {
+text-align: center;
+margin-bottom: 16px;
+font-weight: 600;
+}
+
+/* INPUT */
+input {
+width: 100%;
+padding: 14px;
+margin-top: 10px;
+border-radius: 12px;
+border: 1px solid #e5e5e5;
+background: #fafafa;
+font-size: 14px;
+transition: 0.2s;
+}
+
+input:focus {
+outline: none;
+border-color: #FFC800;
+background: white;
+}
+
+/* ROW (UNTUK DARI / KE) */
+.row {
+display: flex;
+gap: 10px;
+margin-top: 10px;
+}
+
+.row input {
+flex: 1;
+}
+
+/* BUTTON */
+button {
+width: 100%;
+padding: 14px;
+margin-top: 16px;
+border-radius: 12px;
+border: none;
+background: black;
+color: white;
+font-weight: 500;
+cursor: pointer;
+transition: 0.2s;
+}
+
+button:hover {
+background: #222;
+}
+
+/* LOADING */
+.loading {
+text-align: center;
+margin-top: 12px;
+font-size: 14px;
+color: #888;
+}
+
+/* SUCCESS */
+.success {
+background: #fff7cc;
+color: #8a6d00;
+border-left: 4px solid #FFC800;
+padding: 12px;
+border-radius: 10px;
+margin-top: 12px;
+text-align: center;
+animation: fadeIn 0.3s ease;
+}
+
+/* ERROR */
+.error {
+background: #ffecec;
+color: red;
+padding: 12px;
+border-radius: 10px;
+margin-top: 12px;
+text-align: center;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+from { opacity: 0; transform: translateY(5px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+/* DROPDOWN FEEL */
+input[list] {
+cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+.container {
+border-radius: 0;
+height: 100vh;
+justify-content: center;
+}
+}
